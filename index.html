@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For My Hubbyy 💗</title>
+<style>
+  :root { --pink:#ff8fbd; --deep:#d94683; --pale:#fff0f6; --ink:#71334f; --mint:#bcebd0; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; padding:18px;
+    font-family: "Trebuchet MS", system-ui, sans-serif; color:var(--ink);
+    background: radial-gradient(circle at top left,#ffe1ee,transparent 45%), linear-gradient(135deg,#fff5fa,#ffe7f1 55%,#fff0f6);
+    overflow-x:hidden; }
+  .hearts { position:fixed; inset:0; pointer-events:none; overflow:hidden; z-index:0; }
+  .heart { position:absolute; bottom:-40px; opacity:.65; animation:floatUp linear infinite; }
+  @keyframes floatUp { to { transform:translateY(-115vh) rotate(25deg); opacity:0; } }
+  .card { z-index:1; width:min(100%,470px); background:rgba(255,255,255,.82); border:2px solid white;
+    border-radius:30px; padding:clamp(22px,6vw,36px); text-align:center;
+    box-shadow:0 18px 60px #d9468322; backdrop-filter:blur(8px); }
+  .pill { display:inline-block; background:#ffe0ed; color:var(--deep); border-radius:99px; padding:7px 13px; font-size:.8rem; font-weight:800; letter-spacing:.05em; }
+  .sticker { font-size:5rem; margin:16px 0 6px; display:block; animation:bob 2.2s ease-in-out infinite; }
+  @keyframes bob { 50% { transform:translateY(-7px) rotate(-3deg); } }
+  h1 { color:var(--deep); font-size:clamp(1.8rem,7vw,2.5rem); line-height:1.12; margin:12px 0; }
+  p { font-size:1.05rem; line-height:1.65; margin:12px auto; }
+  .buttons { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin:25px 0 8px; }
+  button { font:inherit; font-weight:800; border:0; border-radius:999px; padding:13px 22px; cursor:pointer; transition:transform .18s, box-shadow .18s; }
+  button:hover { transform:translateY(-2px); box-shadow:0 8px 18px #d9468325; }
+  .yes { background:var(--pink); color:#632341; }
+  .no { background:var(--mint); color:#245b3d; }
+  .primary { background:var(--deep); color:white; }
+  .secondary { background:#ffe0ed; color:var(--deep); }
+  .tiny { font-size:.83rem; opacity:.78; }
+  .hidden { display:none; }
+  .progress { display:flex; gap:6px; justify-content:center; margin-top:24px; }
+  .dot { height:7px; width:24px; border-radius:9px; background:#f7c6db; }
+  .dot.active { background:var(--deep); }
+  .sparkle { font-size:1.4rem; }
+  .footer { margin-top:18px; font-size:.78rem; opacity:.6; }
+  @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation:none !important; transition:none !important; } }
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+<main class="card">
+  <section class="slide" id="slide1">
+    <span class="pill">A TINY MESSAGE FOR YOU 💌</span>
+    <span class="sticker" aria-hidden="true">🥺💗</span>
+    <h1>Heyyy, my favourite human!</h1>
+    <p>Are you still angry with me, hubbyy? 👉👈</p>
+    <p class="tiny">Please answer honestly… I made a tiny thing just for you 🧸</p>
+    <div class="buttons">
+      <button class="yes" onclick="goTo('slide2')">YES 😾</button>
+      <button class="no" onclick="goTo('slide3')">NOOO 💗</button>
+    </div>
+    <div class="progress"><span class="dot active"></span><span class="dot"></span><span class="dot"></span></div>
+  </section>
+
+  <section class="slide hidden" id="slide2">
+    <span class="pill">OKAY, HEAR ME OUT 🥹</span>
+    <span class="sticker" aria-hidden="true">🧸💌</span>
+    <h1>I'm sorryyy 💗</h1>
+    <p>Hubbyy, I don't like knowing that you're upset. You mean so much to me, and I really want to understand how you feel. 🥺💗</p>
+    <p>Can I send you a million virtual hugs while we make things okay, one little step at a time? 🫂💕</p>
+    <div class="buttons">
+      <button class="primary" onclick="goTo('slide4')">Okay, tell me more 💌</button>
+      <button class="secondary" onclick="goTo('slide1')">Go back ↩️</button>
+    </div>
+    <div class="progress"><span class="dot"></span><span class="dot active"></span><span class="dot"></span></div>
+  </section>
+
+  <section class="slide hidden" id="slide3">
+    <span class="pill">WAITTT, REALLY? 🥹</span>
+    <span class="sticker" aria-hidden="true">😽💕</span>
+    <h1>You're so precious!</h1>
+    <p>Sending you the biggest virtual hug everrrrr 🫂💗</p>
+    <p>But even if you're still a little upset, that's okay. I want to listen to you, too. 🌷</p>
+    <div class="buttons">
+      <button class="primary" onclick="goTo('slide4')">Give me my surprise ✨</button>
+      <button class="secondary" onclick="goTo('slide1')">Actually… ↩️</button>
+    </div>
+    <div class="progress"><span class="dot"></span><span class="dot active"></span><span class="dot"></span></div>
+  </section>
+
+
+  <section class="slide hidden" id="slide5">
+    <span class="pill">FROM MY HEART TO YOU 💌</span>
+    <span class="sticker" aria-hidden="true">🥹💗🧸</span>
+    <h1>For my hubby jiuuu 💋</h1>
+    <p style="font-weight:800;color:#d94683;">I love uuuuu so muchh my hubby jiuuu Mero kuchupuchu I will love u jati j bahyeni Ani ma annnoy ni garxuuuu huhuu sorryyy haii 💗🥺</p>
+    <p>You're my favourite kuchupuchu everrr. Sending you the biggest hug and all my love. 🫂💕</p>
+    <div class="sparkle">♡ ✧ ♡ ✧ ♡</div>
+    <div class="buttons">
+      <button class="primary" onclick="goTo('slide4'); showerHearts(25);">One more surprise 💞</button>
+      <button class="secondary" onclick="goTo('slide1')">Read it again 💌</button>
+    </div>
+    <div class="progress"><span class="dot"></span><span class="dot"></span><span class="dot active"></span></div>
+  </section>
+
+  <section class="slide hidden" id="slide4">
+    <span class="pill">ONE LAST THING 💗</span>
+    <span class="sticker" aria-hidden="true">💐🐻💋</span>
+    <h1>You're my favourite person, hubbyy! 💗</h1>
+    <p>Thank you for being you, hubbyy. I love having you in my life, and I want us to be able to talk through things together. You're so special to me. 💌</p>
+    <p><strong>Sending 100000 virtual kisses! 💋💋💋</strong></p>
+    <div class="sparkle">♡ ✧ ♡ ✧ ♡</div>
+    <div class="buttons">
+      <button class="primary" onclick="celebrate()">Tap for extra love 💞</button>
+      <button class="secondary" onclick="goTo('slide5')">Read my special message 🥹💗</button>
+      <button class="secondary" onclick="goTo('slide1')">Read it again 💌</button>
+    </div>
+    <div class="progress"><span class="dot"></span><span class="dot"></span><span class="dot active"></span></div>
+  </section>
+  <div class="footer">made with a little bit of love and lots of pink 💗</div>
+</main>
+<script>
+  function goTo(id) {
+    document.querySelectorAll('.slide').forEach(s => s.classList.add('hidden'));
+    document.getElementById(id).classList.remove('hidden');
+    window.scrollTo({top:0, behavior:'smooth'});
+    if (id === 'slide4') showerHearts(14);
+  }
+  const heartBox = document.getElementById('hearts');
+  function showerHearts(count=24) {
+    const symbols = ['💗','💕','💖','♡','✨','🌸'];
+    for (let i=0;i<count;i++) {
+      const el=document.createElement('span');
+      el.className='heart';
+      el.textContent=symbols[Math.floor(Math.random()*symbols.length)];
+      el.style.left=Math.random()*100+'%';
+      el.style.fontSize=(14+Math.random()*22)+'px';
+      el.style.animationDuration=(4+Math.random()*5)+'s';
+      el.style.animationDelay=(Math.random()*1.5)+'s';
+      heartBox.appendChild(el);
+      setTimeout(()=>el.remove(),10000);
+    }
+  }
+  function celebrate() {
+    showerHearts(45);
+    const btn = document.querySelector('#slide4 .primary');
+    btn.textContent='YOU ARE SO LOVED!! 💗✨';
+  }
+  showerHearts(18);
+</script>
+</body>
+</html>
